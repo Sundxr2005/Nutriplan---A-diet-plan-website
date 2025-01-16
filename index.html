@@ -25,6 +25,16 @@
         <div class="brand">NUTRIPLAN</div>
         <button class="login-btn" onclick="openLoginModal()">Login</button>
     </div>
+    <!-- Secondary Navbar -->
+<div class="menu-navbar">
+    <a href="#" class="menu-item">Home</a>
+    <a href="#" class="menu-item">Goals</a>
+    <a href="#" class="menu-item">Calorie Calculator</a>
+    <a href="#" class="menu-item">Meal Plans</a>
+    <a href="#" class="menu-item">Recipes</a>
+    <a href="#" class="menu-item">Progress Tracker</a>
+</div>
+
 <div class="modal" id="loginModal">
     <div class="modal-content">
         <h2>Login</h2>
@@ -33,10 +43,10 @@
         <button>Login</button>
         <div class="social-login">
             <button class="google-login">
-                <img src="googlelogo.png" alt="Google Logo"> Login with Google
+                <img src="images/googlelogo.png" alt="Google Logo"> Login with Google
             </button>
             <button class="facebook-login">
-                <img src="facebooklogo.png" alt="Facebook Logo"> Login with Facebook
+                <img src="images/facebooklogo.png" alt="Facebook Logo"> Login with Facebook
             </button>
         </div>
         <a href="#" class="register-link" onclick="openRegisterModal()">Don't have an account? Register</a>
@@ -52,17 +62,106 @@
         <button>Register</button>
         <div class="social-login">
             <button class="google-login">
-                <img src="google-logo.png" alt="Google Logo"> Register with Google
+                <img src="images/googlelogo.png" alt="Google Logo"> Register with Google
             </button>
             <button class="facebook-login">
-                <img src="facebook-logo.png" alt="Facebook Logo"> Register with Facebook
+                <img src="images/facebooklogo.png" alt="Facebook Logo"> Register with Facebook
             </button>
         </div>
     </div>
 </div>
+<!-- Hero Section -->
+<div class="hero">
+    <div class="hero-content">
+        <h1>Welcome to NUTRIPLAN</h1>
+        <p>Your ultimate partner in achieving your health and fitness goals!</p>
+        <button class="cta-btn" onclick="openLoginModal()">Get Started</button>
+    </div>
+</div>
 
+<!-- Features Section -->
+<section class="features">
+    <h2>Why Choose NUTRIPLAN?</h2>
+    <div class="features-list">
+        <div class="feature-item">
+            <img src="images/meal.png" alt="Meal Plan">
+            <h3>Personalized Meal Plans</h3>
+            <p>Customized diet plans tailored to your health goals and preferences.</p>
+        </div>
+        <div class="feature-item">
+            <img src="images/calorie.png" alt="Calorie Tracker">
+            <h3>Calorie Tracker</h3>
+            <p>Track your daily calorie intake effortlessly and stay on track.</p>
+        </div>
+        <div class="feature-item">
+            <img src="images/progress.png" alt="Progress Tracker">
+            <h3>Progress Tracking</h3>
+            <p>Monitor your journey with detailed charts and insights.</p>
+        </div>
+    </div>
+</section>
 
+<!-- Testimonials Section -->
+<section class="testimonials">
+    <h2>What Our Users Say</h2>
+    <div class="testimonial">
+        <p>"NUTRIPLAN helped me lose 10kg in just 3 months! Highly recommended."</p>
+        <span>- Sundar G.</span>
+    </div>
+    <div class="testimonial">
+        <p>"The calorie tracker and meal plans are game-changers for my busy schedule."</p>
+        <span>- Akash S.</span>
+    </div>
+</section>
+<!-- Blog Section -->
+<section class="blog">
+    <h2>Latest from Our Blog</h2>
+    <div class="blog-posts">
+        <div class="blog-post">
+            <img src="images/5superfoods.png" alt="Blog Post 1">
+            <h3>5 Superfoods to Boost Your Energy</h3>
+            <p>Discover how these 5 amazing superfoods can keep you energized throughout the day!</p>
+            <button class="read-more">Read More</button>
+        </div>
+        <div class="blog-post">
+            <img src="images/top10.png" alt="Blog Post 2">
+            <h3>Top 10 Healthy Snacks for Weight Loss</h3>
+            <p>Stay fit without compromising on taste. Check out these healthy snacks!</p>
+            <button class="read-more">Read More</button>
+        </div>
+        <div class="blog-post">
+            <img src="images/hydration.png" alt="Blog Post 3">
+            <h3>Hydration Tips: How Much Water is Enough?</h3>
+            <p>Learn why hydration is crucial and how to calculate your daily water intake.</p>
+            <button class="read-more">Read More</button>
+        </div>
+    </div>
+</section>
+
+<!-- Join Our Community -->
+<section class="community">
+    <h2>Join Our Community</h2>
+    <p>Connect with like-minded individuals, share your journey, and stay motivated!</p>
+    <button class="cta-btn" onclick="location.href='community.html'">Join Now</button>
+</section>
+<!-- Call-to-Action -->
+<section class="cta">
+    <h2>Ready to Transform Your Health?</h2>
+    <button class="cta-btn" onclick="openRegisterModal()">Sign Up for Free</button>
+</section>
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <h4>NUTRIPLAN</h4>
+        <div class="social-links">
+            <a href="#"><img src="https://www.fittr.com/static-content/ic_facebook_f308e207ab.svg" alt="Facebook"></a>
+            <a href="#"><img src="https://www.fittr.com/static-content/ic_twitter_7163279810.svg" alt="Twitter"></a>
+            <a href="#"><img src="https://www.fittr.com/static-content/ic_instagram_f76dac0534.svg" alt="Instagram"></a>
+        </div>
+        <p>&copy; 2025 NUTRIPLAN. All rights reserved.</p>
+        <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a>
+    </div>
+</footer>
     <script src="script.js"></script>
-
 </body>
 </html>
