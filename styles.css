@@ -262,36 +262,51 @@ body {
 }
 
 .features h2 {
-    font-size: 32px;
-    margin-bottom: 30px;
+    font-size: 40px;
     font-family: 'Merriweather Sans', sans-serif;
+    margin: 80px;
 }
 
 .features-list {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
     gap: 30px;
 }
 
-.feature-item {
+.feature-card {
     text-align: center;
-    max-width: 250px;
+    background: #f4f4f8;
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 350px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.feature-item img {
-    width: 100px;
-    margin-bottom: 15px;
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
-.feature-item h3 {
-    font-size: 20px;
+.feature-card h3 {
+    font-size: 30px;
     margin-bottom: 10px;
 }
 
-.feature-item p {
-    font-size: 14px;
+.feature-card p {
+    font-size: 18px;
     color: #555;
+    margin-bottom: 15px; /* Add space between text and image */
 }
+
+.feature-card img {
+    width: 300px;
+    height: auto;
+    margin-top: auto;
+    padding: 10px 65px;
+    margin-left: -40px;
+}
+
 
 /* Testimonials Section */
 .testimonials {
