@@ -1,20 +1,20 @@
 body {
     margin: 0;
     font-family: "Merriweather Sans", sans-serif;
+    font-weight: 600;
 }
 .navbar {
-    position: sticky; /* Makes the navbar sticky */
+    position: sticky;
     top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #000000; /* Semi-transparent background */
+    background: #000000;
     padding: 10px 20px;
     color: #d0ff12;
     height: 70px;
-    backdrop-filter: blur(12px); /* No blur initially */
-    z-index: 1000; /* Ensure it's above other elements */
-
+    backdrop-filter: blur(12px);
+    z-index: 1000;
 }
 .navbar .brand {
     font-size: 33px;
@@ -23,11 +23,9 @@ body {
     transition: transform 0.3s ease;
     margin-left: 90px;
 }
-
 .navbar .brand:hover {
     transform: scale(1.1);
 }
-
 .navbar .login-btn {
     background-color: #d0ff12;
     color: #000000;
@@ -41,16 +39,13 @@ body {
     transition: background-color 0.3s ease, transform 0.3s ease;
     margin-right: 90px;
 }
-
 .navbar .login-btn:hover {
     background-color: #000000;
     transform: translateY(-2px);
     color: #f1f1f1;
 }
-
-/* Modal Styles */
 .modal {
-    display: none; /* Hidden by default */
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -60,8 +55,8 @@ body {
     justify-content: center;
     align-items: center;
     animation: fadeIn 0.5s ease;
+    border: #d0ff12;
 }
-
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -70,17 +65,17 @@ body {
         opacity: 1;
     }
 }
-
 .modal-content {
-    background-color: white;
+    background-color: #000000;
     padding: 20px;
     border-radius: 10px;
     width: 400px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     animation: slideIn 0.5s ease;
+    color: #ffffff;
+    border: 1.5px solid #d0ff12;
 }
-
 @keyframes slideIn {
     from {
         transform: translateY(-50px);
@@ -91,108 +86,102 @@ body {
         opacity: 1;
     }
 }
-
 .modal-content h2 {
     margin-bottom: 20px;
     font-family: 'Merriweather Sans', sans-serif;
 }
-
 .modal-content input {
     width: 95%;
     padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
+    margin: 4px 0;
+    border: 1.5px solid #1b1b1b;
     border-radius: 5px;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background: #1b1b1b;
 }
-
 .modal-content input:focus {
     border-color: #1f1f1f;
     box-shadow: 0 0 5px rgba(31, 31, 31, 0.5);
     outline: none;
 }
-
 .modal-content button {
-    background-color: #000000;
-    color: white;
+    background-color: #d0ff12;
+    color: #000000;
     border: none;
     padding: 10px;
     width: 100%;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: -10px;
 }
-
 .modal-content button:hover {
-    background-color: #2f2f2f;
+    background-color: #d0ff12;
     transform: translateY(-3px);
 }
-
 .modal-content .register-link {
     margin-top: 10px;
     display: block;
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
     font-family: 'Merriweather Sans', sans-serif;
     transition: color 0.3s ease, transform 0.3s ease;
 }
-
 .modal-content .register-link:hover {
-    color: #1f1f1f;
+    color: #d0ff12;
     transform: scale(1.05);
     text-decoration: underline;
 }
 .social-login {
     margin-top: 20px;
 }
-
 .social-login button {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: #f1f1f1;
-    color: #000;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    padding: 10px 20px;
-    margin: 5px 0;
+    background-color: transparent;
+    border: 2px solid #d0ff12;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    margin: 5px;
     cursor: pointer;
-    font-family: 'Merriweather Sans', sans-serif;
-    font-size: 14px;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
-
 .social-login button img {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
+    width: 24px;
+    height: 24px;
 }
-
 .social-login .google-login:hover {
     background-color: #0050b9;
-    color: white;
+    border-color: #0050b9;
 }
-
 .social-login .facebook-login {
-    background-color: #f1f1f1;
+    background-color: #000000;
     color: #000000;
 }
-
 .social-login .facebook-login:hover {
     background-color: #324b81;
-    color: white;
+    border-color: #324b81;
 }
-/* Secondary Navbar Styles */
+.social-login .twitter-login:hover {
+    background-color: #2c2f30;
+    border-color: #2c2f30;
+}
 .menu-navbar {
-    position: sticky; /* Makes the menu-navbar sticky */
-    top: 87px; /* Sticks below the main navbar */
+    position: sticky;
+    top: 87px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #000; /* Semi-transparent background */
+    background: #000;
     padding: 15px 0;
-    backdrop-filter: blur(12px); /* No blur initially */
-    z-index: 999; /* Ensure it's above other content */
+    backdrop-filter: blur(12px);
+    z-index: 999;
 }
 .menu-navbar .menu-item {
     margin: 0 15px;
@@ -203,30 +192,27 @@ body {
     font-weight: 600;
     transition: color 0.3s ease, transform 0.2s ease;
 }
-
 .menu-navbar .menu-item:hover {
-    color: #d0ff12; /* Highlight color */
+    color: #d0ff12;
     transform: scale(1.1);
 }
-
-/* Active Menu Item */
 .menu-navbar .menu-item.active {
     color: #ff6347;
     border-bottom: 2px solid #ff6347;
 }
-/* Hero Section */
 .hero {
     background: black;
     color: white;
     text-align: left;
     padding: 80px 90px;
     display: flex;
-    align-items: center; /* Vertically align items */
-    justify-content: space-between; /* Space between text and image */
+    align-items: center;
+    justify-content: space-between;
 }
-.hero img{
-    width: 350px;
+.hero img {
+    width: 450px;
     display: block;
+    margin-right: 70px;
 }
 .hero .hero-content h1 {
     font-size: 48px;
@@ -241,14 +227,12 @@ body {
     color: #d0ff12;
     MARGIN-TOP: auto;
 }
-
 .hero .hero-content p {
     font-size: 18px;
     margin-bottom: 30px;
     font-family: 'Merriweather Sans';
     color: #ffffff;
 }
-
 .hero .cta-btn {
     background-color: #d0ff12;
     color: rgb(0, 0, 0);
@@ -261,33 +245,27 @@ body {
     font-family: 'Merriweather Sans', sans-serif;
     font-weight: 600;
 }
-
 .hero .cta-btn:hover {
     background-color: #d0ff12;
     transform: scale(1.1);
 }
-
-/* Features Section */
 .features {
     text-align: center;
     padding: 50px 20px;
     background-color: #000000;
 }
-
 .features h2 {
     font-size: 40px;
     font-family: 'Merriweather Sans', sans-serif;
     margin: 80px;
     color: #d0ff12;
 }
-
 .features-list {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    flex-wrap: wrap;
     gap: 30px;
 }
-
 .feature-card {
     text-align: center;
     background: #1b1b1b;
@@ -296,24 +274,20 @@ body {
     max-width: 350px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .feature-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
-
 .feature-card h3 {
     font-size: 30px;
     margin-bottom: 10px;
     color: #d0ff12;
 }
-
 .feature-card p {
     font-size: 18px;
     color: #ffffff;
-    margin-bottom: 15px; /* Add space between text and image */
+    margin-bottom: 15px;
 }
-
 .feature-card img {
     width: 300px;
     height: auto;
@@ -321,54 +295,43 @@ body {
     padding: 10px 65px;
     margin-left: -40px;
 }
-
-
-/* Testimonials Section */
 .testimonials {
     background-color: #000000;
     padding: 40px 20px;
     text-align: center;
 }
-
 .testimonials h2 {
     font-size: 28px;
     margin-bottom: 20px;
     font-family: 'Aclonica', serif;
     color: #d0ff12;
 }
-
 .testimonial {
     margin: 20px auto;
     max-width: 500px;
     color: #ffffff;
 }
-
 .testimonial p {
     font-size: 16px;
     color: #ffffff;
     font-style: italic;
 }
-
 .testimonial span {
     display: block;
     margin-top: 10px;
     font-size: 14px;
 }
-
-/* Call-to-Action */
 .cta {
     background-color: #d0ff12;
     color: #000000;
     text-align: center;
     padding: 50px 20px;
 }
-
 .cta h2 {
     font-size: 30px;
     margin-bottom: 20px;
     font-family: 'Zen Dots', cursive;
 }
-
 .cta .cta-btn {
     background-color: black;
     color: #ffffff;
@@ -379,13 +342,11 @@ body {
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
-
 .cta .cta-btn:hover {
     background-color: #000000;
     color: #ffffff;
     transform: scale(1.1);
 }
-/* Modal Fade-Out Animation */
 @keyframes fadeOut {
     from {
         opacity: 1;
@@ -394,34 +355,28 @@ body {
         opacity: 0;
     }
 }
-
-/* Modal Hidden State */
 .modal.hidden {
     animation: fadeOut 0.3s ease;
-    opacity: 0; /* Ensure the modal fades out before being hidden */
+    opacity: 0;
     pointer-events: none;
 }
-/* Blog Section */
 .blog {
     text-align: center;
     padding: 50px 20px;
     background-color: #000000;
 }
-
 .blog h2 {
     font-size: 32px;
     margin-bottom: 30px;
     font-family: 'Merriweather Sans', sans-serif;
     color: #d0ff12;
 }
-
 .blog-posts {
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
 }
-
 .blog-post {
     background: #1b1b1b;
     border-radius: 10px;
@@ -431,23 +386,19 @@ body {
     text-align: left;
     color: white;
 }
-
 .blog-post img {
     width: 100%;
     border-radius: 10px;
     margin-bottom: 15px;
 }
-
 .blog-post h3 {
     font-size: 18px;
     margin-bottom: 10px;
 }
-
 .blog-post p {
     font-size: 14px;
     margin-bottom: 20px;
 }
-
 .blog-post .read-more {
     background-color: #d0ff12;
     color: #000000;
@@ -459,31 +410,25 @@ body {
     font-family: 'Merriweather Sans';
     font-weight: 600;
 }
-
 .blog-post .read-more:hover {
     background-color: #d0ff12;
 }
-
-/* Community Section */
 .community {
     text-align: center;
     padding: 50px 20px;
     background-color: #000000;
 }
-
 .community h2 {
     font-size: 32px;
     margin-bottom: 20px;
     font-family: 'Zen Dots', cursive;
     color: #d0ff12;
 }
-
 .community p {
     font-size: 16px;
     margin-bottom: 30px;
     color: #ffffff;
 }
-
 .community .cta-btn {
     background-color: #d0ff12;
     color: rgb(0, 0, 0);
@@ -495,42 +440,34 @@ body {
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
-
 .community .cta-btn:hover {
     background-color: #d0ff12;
     transform: scale(1.1);
 }
-
-/* Footer */
 footer {
     background-color: #000000;
     color: white;
     text-align: left;
     padding: 60px 20px;
 }
-
 footer .footer-content {
     max-width: 500px;
     margin: 20px 50px;
 }
-
 footer .social-links img {
     width: 30px;
     margin: -3px 5px;
     transition: transform 0.3s ease;
 }
-
 footer .social-links img:hover {
     transform: scale(1.2);
 }
-
 footer a {
     color: #d0ff12;
     text-decoration: none;
     margin: 0 5px;
     transition: color 0.3s ease;
 }
-
 footer a:hover {
     color: #d0ff12;
 }
